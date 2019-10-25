@@ -1,0 +1,83 @@
+*{
+ font-family: 'Quicksand', sans-serif;
+ color: white;
+}
+
+.bold{
+    font-weight: bold;
+}
+.bold-black{
+    font-weight: bold;
+    color: black;
+}
+.light{
+    font-weight: lighter;
+}
+.light-black{
+    font-weight: lighter;
+    color: black;
+}
+.bg-custom{
+    background-color: #23013a;
+}
+/* Style for Home without logging*/
+.bg-inicio{
+background: rgb(0,0,0);
+background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(22,13,33,1) 35%, rgba(44,27,67,1) 100%);
+}
+p{
+margin: 0;
+padding: 0;
+}
+.collage{
+    text-align: right;
+}
+.welcome{
+    text-align: center;
+    margin-top: 100px;
+}
+.welcome-text{
+    text-align: left;
+    margin-left: 160px;
+    margin-top: 150px;
+}
+
+/* .container{ Checar despues
+    margin-right: 0;
+    margin-left: 0;
+    width: 100%;
+} */
+
+.btn-sesion{
+    color: white;
+    background-color: #53347E;
+    font-weight: normal;
+}
+.btn-suscribirse{
+    color: white;
+    background-color: #53347E;
+    width: 70%;
+    font-weight: normal;
+
+}
+.btn-sesion:hover{
+    border: solid 1px white;
+    color: white;
+}
+.btn-suscribirse:hover{
+    border: solid 1px white;
+    color: white;
+}
+.informacion{
+   background-color: white;
+   width: 100%;
+}
+.image-info{
+    text-align: center;
+}
+.footer-color{
+    color: #AB8BD7 !important;
+}
+.footer-center{
+    text-align: center;
+}
