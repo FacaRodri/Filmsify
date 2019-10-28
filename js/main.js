@@ -1,4 +1,7 @@
 'use strict'
+
+
+
 document.addEventListener('DOMContentLoaded', function(){
     function load(urlPartial){
         fetch(urlPartial).then(
@@ -12,11 +15,15 @@ document.addEventListener('DOMContentLoaded', function(){
         )
     }
 
+
+    
+
     load('html/inicio.html')
-    let botones = document.querySelectorAll('js-btn');
-    //botones[0]=addEventListener('click', e=> load('html/'));
+    let suscribirse1 = document.querySelector(".btn-suscribirse");
+    suscribirse1 = addEventListener('click', e=> load('./html/suscribirse1.html'));
 
-
+    fun
+    
 
 
 
