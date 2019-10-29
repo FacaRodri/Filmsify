@@ -1,3 +1,4 @@
+'use strict'
 document.addEventListener('DOMContentLoaded', function () {
     let btns = document.getElementsByClassName("nav-item");
     for (let i = 0; i < btns.length; i++) {
