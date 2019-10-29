@@ -1,6 +1,8 @@
 *{
  font-family: 'Quicksand', sans-serif;
  color: white;
+ padding: 0;
+ margin: 0;
 }
 
 .bold{
@@ -84,4 +86,7 @@ padding: 0;
 }
 .footer-center{
     text-align: center;
+}
+.nav{
+    padding: 0 0 0 0;
 }
