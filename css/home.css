@@ -1,0 +1,20 @@
+.navbar {
+    background-color: #44296b99;
+}
+
+.top-nav-collapse {
+    background-color: #44296b;
+}
+
+@media only screen and (max-width: 575px) {
+    .navbar {
+        background-color: #44296b;
+    }
+}
+
+html,
+body,
+header,
+.view {
+    height: 100%;
+}
