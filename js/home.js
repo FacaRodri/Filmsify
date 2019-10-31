@@ -20,6 +20,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         )
     }
+    let hmBtn=document.getElementsByClassName("burguer");
+    
     load('html/general.html')
     let jsBtn = document.getElementsByClassName("js-btn");
     jsBtn[0].addEventListener('click', e => load('html/general.html'));    

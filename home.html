@@ -10,59 +10,170 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <!--Material Icons-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Quicksand Font-->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
   <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-  <!-- Material Design Bootstrap -->
-  <link href="css/mdb.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!--MDB-->
+  <link rel="stylesheet" href="vendor/bootstrap/css/mdb.min.css">
   <!-- Your custom styles (optional) -->
   <link href="css/home.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
-  <!-- <base href="https://FacaRodri.github.io/Filmsify/home.html"> -->
+  <base href="https://FacaRodri.github.io/Filmsify/home.html">
 </head>
 
 <body>
   <!--Navbar -->
   <nav class="navbar fixed-top navbar-expand-sm navbar-dark scrolling-navbar">
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    <!--P1-->
+    <button class="navbar-toggler burguer" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
       aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
+    <!--P2-->
     <a class="navbar-brand js-btn" href="#"><strong>
         <img src="images/logo.png" height="30px" alt="">
       </strong></a>
+    <!--P3-->
+    <div class="user order-sm-last">
+      <div class="row">
+        <a class="search mx-1" href="#"><strong>
+            <i class="material-icons">
+              search
+            </i>
+          </strong></a>
+        <a class="search mx-1 d-none d-sm-block" href="#"><strong>
+            <i class="material-icons">
+              notifications_active
+            </i>
+          </strong></a>
+        <a class="search mx-1 d-none d-sm-block" href="#"><strong>
+            <i class="material-icons">
+              face
+            </i>
+          </strong></a>
+      </div>
+    </div>
+    <!--Collapsable elements-->
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item js-btn active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item js-btn">
-          <a class="nav-link" href="#">Link</a>
-        </li>
-        <li class="nav-item js-btn">
-          <a class="nav-link" href="#">Profile</a>
-        </li>
-      </ul>
+      <div class='navbar-expander'></div>
+      <div class="container-fluid float-left pl-0 coll-mov">
+        <!--User mobile-->
+        <a class="d-block d-sm-none" href="#">
+          <img class="prof" src="images/user.jpg" height="60px" alt="">
+          <h6 class="my-auto h6">Juan</h6>
+        </a>
+        <ul class="navbar-nav mr-auto">
+          <!--Inicio-->
+          <li class="nav-item js-btn active d-none d-sm-block">
+            <a class="nav-link rounded" href="#">
+              <h6 class="my-auto h6">Inicio</h6>
+            </a>
+          </li>
+          <!--Pelis-->
+          <li class="nav-item js-btn">
+            <a class="nav-link rounded" href="#">
+              <div class="row mx-auto">
+                <i class="material-icons my-auto mr-1 d-block d-sm-none h6">
+                  video_library
+                </i>
+                <h6 class="my-auto h6">Peliculas</h6>
+              </div>
+            </a>
+          </li>
+          <!--Series-->
+          <li class="nav-item js-btn">
+            <a class="nav-link rounded" href="#">
+              <div class="row mx-auto">
+                <i class="material-icons my-auto mr-1 d-block d-sm-none h6">
+                  subscriptions
+                </i>
+                <h6 class="my-auto h6">Series</h6>
+              </div>
+            </a>
+          </li>
+          <!--Favs-->
+          <li class="nav-item js-btn">
+            <a class="nav-link rounded" href="#">
+              <div class="row mx-auto">
+                <i class="material-icons my-auto mr-1 d-block d-sm-none h6">
+                  favorite
+                </i>
+                <h6 class="my-auto h6">Mis Fav</h6>
+              </div>
+            </a>
+          </li>
+          <!--Notifications-->
+          <li class="nav-item js-btn d-block d-sm-none">
+            <a class="nav-link rounded" href="#">
+              <div class="row mx-auto">
+                <i class="material-icons my-auto mr-1 h6">
+                  notifications_active
+                </i>
+                <h6 class="my-auto h6">Notificaciones</h6>
+              </div>
+            </a>
+          </li>
+          <!--Cuenta-->
+          <li class="nav-item js-btn d-block d-sm-none">
+            <a class="nav-link rounded" href="#">
+              <div class="row mx-auto">
+                <i class="material-icons my-auto mr-1 h6">
+                  face
+                </i>
+                <h6 class="my-auto h6">Mi cuenta</h6>
+              </div>
+            </a>
+          </li>
+          <!--Cerrar sesion-->
+          <li class="nav-item js-btn d-block d-sm-none">
+            <a class="nav-link rounded" href="#">
+              <div class="row mx-auto">
+                <i class="material-icons my-auto mr-1 h6">
+                  exit_to_app
+                </i>
+                <h6 class="my-auto h6">Cerrar sesion</h6>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </nav>
   <!--/.Navbar -->
 
   <!-- Start your project here-->
 
-  <div class="cuerpo"></div>
+  <div class="container-fluid">
+    <div class="cuerpo">
 
 
-  <!-- Start your project here-->
-  <!-- SCRIPTS -->
-  <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
-  <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
-  <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
-  <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.min.js"></script>
-  <!--Custom JS-->
-  <script type="text/javascript" src="js/home.js"></script>
+    </div>
+
+    <!--Footer-->
+    <footer class="py-5 bg-dark footer">
+      <div class="container footer-center ">
+        <img src="images/logo.png" alt="logo" width="90" height="45" srcset="">
+        <p class="m-0 text-center text-white footer-color"> <br> Términos y Aviso de privacidad &nbsp&nbsp&nbsp Contacto
+          &nbsp&nbsp&nbsp Ayuda </p>
+      </div>
+    </footer>
+    <!--/.Footer-->
+
+
+    <!-- Start your project here-->
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+    <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <!--MDB-->
+    <script src="vendor/bootstrap/js/mdb.min.js"></script>
+    <!--Custom JS-->
+    <script type="text/javascript" src="js/home.js"></script>
 </body>
 
 </html>
