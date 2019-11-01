@@ -66,16 +66,18 @@
 
 }
 
+
 .carousel-item.mul {
     margin-right: 0;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
 }
-.carousel-caption{
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, #000000cd 0%, #00000000 100%);
-    width: 100vw;
+
+.carousel-caption {
+    background: rgb(43, 38, 46);
+    background: linear-gradient(180deg, rgba(43,38,46,0.85) 5%, rgba(43,38,46,0.75) 30%, rgba(43,38,46,0) 100%);
+    width: 100%;
     height: 20%;
     left: 0;
     bottom: 1rem;

@@ -24,7 +24,6 @@
 @media only screen and (max-width: 575px) {
     .navbar {
         background-color: #44296b;
-        position: relative;
     }
 
     .navbar-collapse,
@@ -45,11 +44,13 @@
 
     .coll-mov {
         position: fixed;
-        left: 0;
     }
 
     .h6 {
         font-size: 175%;
+    }
+    .user-name{
+        width: 15%;
     }
 }
 
@@ -78,6 +79,14 @@ body {
     border-radius: 30px;
     border: 1px solid white;
 }
-.burguer{
-    position: fixed;
+
+
+
+/*Footer*/
+
+.footer-color{
+    color: #AB8BD7 !important;
+}
+.footer-center{
+    text-align: center;
 }
