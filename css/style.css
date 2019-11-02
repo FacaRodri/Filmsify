@@ -90,3 +90,20 @@ padding: 0;
 .nav{
     padding: 0 0 0 0;
 }
+input.creditCard{
+    background: url('/images/mastercard.png') 0 0 no-repeat;
+    background-size: 50px 30px;
+    background-position: right;
+
+}
+button.suscribite{
+    color: white;
+    font-weight: bold;
+
+}
+.suscribite:hover{
+    color:lightgrey;
+}
+
+
+
