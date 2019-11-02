@@ -1,25 +1,136 @@
 
 .carousel-caption {
     background: linear-gradient(180deg, rgba(166, 166, 166, 0.151) 0%, rgba(255, 255, 255, 0) 100%);
-    
     width: 100%;
     height: 30%;
     left: 0;
     bottom: 2rem;
 }
+.carousel-item {
+    height: 80vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
 .itemImage{
 width:10%;
 height: 200px;
 
 }
+
+@media only screen and (min-width : 1200px){
+    .carousel-item {
+        height: 80vh;
+       
+      }
+}
+@media only screen and (max-width : 767px){
+    .carousel-item {
+        height: 65vh;
+       
+      }
+      .carousel-caption{
+          font-size: small;
+      }
+}
+@media only screen and (max-width : 575px){
+    .carousel-item {
+        height: 40vh;
+       
+      }
+      .carousel-caption{
+          margin-bottom: 25%;
+        font-size: small;
+    }
+    .carousel-caption.h1{
+        font-size: 10%;
+    }
+}
+
+
+.btn-suscribirse{
+    color: white;
+    background-color: #53347E;
+    height: 20%;
+    font-weight: normal;
+}
+.btn-suscribirse:hover{
+    border: solid 1px white;
+    color: white;
+}
 .box{
     width: 10%;
     height: 100%;
+    position: relative;
     
 }
+.box:hover .overlay-box{
+    opacity: 1;
+}
+
 .boxM{
     width: 30%;
     height: 100%;
 }
 
 
+.overlay-box{
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.72);
+    width: 87%;   
+    height: 20%;
+    z-index: 100;
+    opacity: 0;
+    
+}
+.overlay-box-mobile{
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.72);
+    width: 87%;   
+    height: 20%;
+    z-index: 100;
+   
+    
+}
+
+.line-view{
+    top: 100%;
+    width: 100px;
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.932);
+    height: 2%;
+    z-index: 150;
+}
+
+.play-mobile{
+    z-index: 200;
+}
+.play-mobile{
+    top: 30%;
+    left: 33%;
+    width: 100px;
+    position: absolute;
+    height: 2%;
+    z-index: 150;
+}
+.play-mobile-icon{
+
+    font-size: 50px;
+}
+.carousel-control-next{
+    width: 30%;
+    height: 60%;
+    left: 100;
+}
+
+.carousel-control-previous{
+    width: 30%;
+    height: 60%;
+    left: 100;
+}
