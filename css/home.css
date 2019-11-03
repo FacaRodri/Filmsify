@@ -25,7 +25,9 @@
     .navbar {
         background-color: #44296b;
     }
-
+    .cuerpo{
+        margin-top: 71px;
+    }
     .navbar-collapse,
     .navbar-collapse.collapse,
     .navbar-collapse.in,
