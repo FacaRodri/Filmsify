@@ -27,3 +27,4 @@ document.addEventListener('DOMContentLoaded', function () {
     jsBtn[0].addEventListener('click', e => load('html/general.html'));    
     jsBtn[1].addEventListener('click', e => load('html/general.html'));
 })
+

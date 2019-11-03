@@ -64,9 +64,9 @@ header,
 }
 
 body {
-    background-color: #000000;
+    background: rgb(0,0,0);
+    
 }
-
 .search {
     width: 25px;
     height: 25px;

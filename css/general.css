@@ -58,8 +58,10 @@ height: 200px;
 .btn-suscribirse{
     color: white;
     background-color: #53347E;
-    height: 20%;
+    height: 30%;
+    width: 45%;
     font-weight: normal;
+    
 }
 .btn-suscribirse:hover{
     border: solid 1px white;
@@ -137,3 +139,11 @@ height: 200px;
     left: -5%;
     margin-right: 100%;
 }
+
+.bg-friday{
+    
+    background-color: rgb(18, 3, 34);
+    width: 100%;
+        }
+
+
