@@ -6,9 +6,9 @@
     left: 0;
     bottom: 2rem;
 }
-.carousel-item {
-    height: 80vh;
-    min-height: 350px;
+.carousel-header {
+    height: 50%;
+    min-height: 500px;
     background: no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -23,13 +23,13 @@ height: 200px;
 }
 
 @media only screen and (min-width : 1200px){
-    .carousel-item {
+    .carousel-header {
         height: 80vh;
        
       }
 }
 @media only screen and (max-width : 767px){
-    .carousel-item {
+    .carousel-header {
         height: 65vh;
        
       }
@@ -38,7 +38,7 @@ height: 200px;
       }
 }
 @media only screen and (max-width : 575px){
-    .carousel-item {
+    .carousel-header {
         height: 40vh;
        
       }
@@ -51,7 +51,10 @@ height: 200px;
     }
 }
 
-
+.button-header{
+    bottom: 0;
+    right: 0;
+}
 .btn-suscribirse{
     color: white;
     background-color: #53347E;
@@ -124,13 +127,13 @@ height: 200px;
     font-size: 50px;
 }
 .carousel-control-next{
-    width: 30%;
-    height: 60%;
-    left: 100;
+    top: 5%;
+    
+    left: 90%;
 }
 
-.carousel-control-previous{
-    width: 30%;
-    height: 60%;
-    left: 100;
+.carousel-control-prev{
+    top: 1%;
+    left: -5%;
+    margin-right: 100%;
 }
