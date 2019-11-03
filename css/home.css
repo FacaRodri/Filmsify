@@ -25,9 +25,11 @@
     .navbar {
         background-color: #44296b;
     }
-    .cuerpo{
+
+    .cuerpo {
         margin-top: 71px;
     }
+
     .navbar-collapse,
     .navbar-collapse.collapse,
     .navbar-collapse.in,
@@ -51,8 +53,26 @@
     .h6 {
         font-size: 175%;
     }
-    .user-name{
+
+    .user-name {
         width: 15%;
+    }
+
+    .burger {
+        position: fixed;
+        z-index: 2;
+    }
+
+    .prof {
+        border-radius: 30px;
+        border: 1px solid white;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .prof {
+        border-radius: 24px;
+        border: 1px solid white;
     }
 }
 
@@ -77,18 +97,18 @@ body {
     color: white;
 }
 
-.prof {
-    border-radius: 30px;
-    border: 1px solid white;
-}
 
+.form-control {
+    opacity: 0.2;
+}
 
 
 /*Footer*/
 
-.footer-color{
+.footer-color {
     color: #AB8BD7 !important;
 }
-.footer-center{
+
+.footer-center {
     text-align: center;
 }
