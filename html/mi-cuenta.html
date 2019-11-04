@@ -1,47 +1,92 @@
 <head>
-<link rel="stylesheet" href="/css/mi-cuenta.css">
+    <link rel="stylesheet" href="/css/mi-cuenta.css">
 
 
 </head>
 
-<div class="container-fluid bg-white">
-    <div class="row d-flex justify-content-center">
-        <div class="col-6 col-lg-6 suscripcion mt-5 ">
+<div class="container-fluid bg-custom">
+</div>
+<div class="container-fluid bg-white user py-2">
+    <div class="row d-flex">
+        <div class="col-6 col-lg-6 suscripcion px-5">
+            <div class="row">
+                <div class="offset-2 col-8">
+                    <h4 class="bold-black mt-5">Mi cuenta</h4>
+                    <form>
+                        <div class="form-group">
+                            <label class="ligth-black mt-3">Editar nombre de usuario</label>
+                            <input type="text" class="form-control" id="name" aria-describedby="name"
+                                placeholder="Mariano">
+                        </div>
+                        <div class="form-group">
 
-            <h4 class="bold-black mt-5">Mi cuenta</h4>
-            
-            <form>
-                <div class="form-group">
-                    <label class="ligth-black mt-3">Editar nombre de usuario</label>
-                    <input type="text" class="form-control" id="name" aria-describedby="name" placeholder="Mariano">
+                            <label class="">Email actual</label>
+                            <br>
+                            <label class="">emailActual@gmail.com</label>
+                            <br>
+                            <label for="">Nuevo email</label>
+                            <input type="email" class="form-control" id="email" aria-describedby="email"
+                                placeholder="email@gmail.com">
+                        </div>
+                        <div class="form-group">
+                            <label class="bold-black">Editar contraseña</label>
+                            <br>
+                            <label for="">Contraseña actual</label>
+                            <input type="password" class="form-control" id="actual-password"
+                                aria-describedby="actual-password" placeholder="******">
+                            <label for="">Nueva contraseña</label>
+                            <input type="password" class="form-control" id="new-password"
+                                aria-describedby="new-password" placeholder="******">
+                            <label for="">Repetir nueva contraseña</label>
+                            <input type="password" class="form-control" id="repeat-new-password"
+                                aria-describedby="repeat-new-password" placeholder="******">
+                        </div>
+                    </form>
+                    <button type="button" id="suscription1" class="btn btn-suscribirse w-100 ml-0">Guardar
+                        cambios</button>
                 </div>
-                <div class="form-group">
-                    
-                    <label class="">Email actual</label>
-                    <br>
-                    <label class="">emailActual@gmail.com</label>
-                    <br>
-                    <label for="">Nuevo email</label>
-                    <input type="email" class="form-control" id="email" aria-describedby="email"
-                        placeholder="email@gmail.com">
-                </div>
-                <div class="form-group">
-                    <label class="bold-black">Editar contraseña</label>
-                    <br>
-                    <label for="">Contraseña actual</label>
-                    <input type="password" class="form-control" id="actual-password" aria-describedby="actual-password"
-                        placeholder="******">
-                    <label for="">Nueva contraseña</label>
-                    <input type="password" class="form-control" id="new-password" aria-describedby="new-password"
-                        placeholder="******">
-                        <label for="">Repetir nueva contraseña</label>
-                        <input type="password" class="form-control" id="repeat-new-password" aria-describedby="repeat-new-password"
-                            placeholder="******">
-                </div>
+            </div>
         </div>
-        <div class="col-6">
-
-            <h1> </h1>
+        <div class="col-6 col-lg-6 suscripcion px-5 susc-pago">
+            <div class="row">
+                <div class="offset-2 col-8">
+                    <h4 class="bold-black mt-5">Datos de pago</h4>
+                    <form>
+                        <div class="form-group">
+                            <label class="bold-black mt-3">Tarjeta de credito</label>
+                            <br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="">Tarjeta actual</label>
+                                    <br>
+                                    <label class="">**** **** **** 1234</label>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" id="suscription1"
+                                        class="btn btn-suscribirse w-100 ml-0">Cambiar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label class="bold-black mt-3">Tu plan</label>
+                            <br>
+                            <div class="row">
+                                <div class="col-6">
+                                    <label class="">Plan actual</label>
+                                    <br>
+                                    <label class="">Diamante</label>
+                                </div>
+                                <div class="col-6">
+                                    <button type="button" id="suscription1"
+                                        class="btn btn-suscribirse w-100 ml-0">Cambiar</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <button type="button" id="suscription1" class="btn btn-cancelar w-100 ml-0">Cancelar
+                        suscripcion</button>
+                </div>
+            </div>
         </div>
 
 
