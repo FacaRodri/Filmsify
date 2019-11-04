@@ -1,0 +1,26 @@
+*{
+    font-family: 'Quicksand', sans-serif;
+    color: black;
+}
+
+h6{
+    color: white;
+}
+.bold{
+    font-weight: bold;
+}
+.bold-black{
+    font-weight: bold;
+    color: black;
+}
+.bold-white{
+    font-weight: bold;
+    color: white;
+}
+.light{
+    font-weight: lighter;
+}
+.light-black{
+    font-weight: lighter;
+    color: black;
+}

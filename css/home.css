@@ -84,10 +84,10 @@ header,
 }
 
 body {
-    background: rgb(0,0,0);
-    
+    background-color: #000000;
 }
-.search {
+
+.ics {
     width: 25px;
     height: 25px;
 
