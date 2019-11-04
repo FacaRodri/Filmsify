@@ -1,10 +1,11 @@
 
 .carousel-caption {
     background: linear-gradient(180deg, rgba(166, 166, 166, 0.151) 0%, rgba(255, 255, 255, 0) 100%);
-    width: 100%;
+    width: 100vw;
     height: 30%;
     left: 0;
     bottom: 2rem;
+    
 }
 .carousel-header {
     height: 50%;
@@ -37,7 +38,7 @@ height: 200px;
 }
 @media only screen and (max-width : 575px){
     .carousel-header {
-        height: 10vh;
+        height: 5vh;
        
       }
       .carousel-caption{
@@ -47,12 +48,17 @@ height: 200px;
     .carousel-caption.h1{
         font-size: 10%;
     }
+    .btn-suscribirse{
+     
+        
+        
+    }
 }
 
 .button-header{
-    bottom: 0;
-    right: 0;
-    
+    left: 4%;
+    bottom: 60%;
+    float: right;
     height: 100%;
     width: 100%;
 }
@@ -60,9 +66,11 @@ height: 200px;
     color: white;
     background-color: #53347E;
     height: 30%;
-    width: 45%;
+    width: 20vw;
     font-weight: normal;
     font-size: 80%;
+    z-index: 10000;
+    
     
 }
 .btn-suscribirse:hover{
@@ -113,6 +121,7 @@ height: 200px;
     background-color: rgba(255, 0, 0, 0.932);
     height: 2%;
     z-index: 150;
+    display: block;
 }
 
 .play-mobile{
