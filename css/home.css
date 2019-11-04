@@ -48,6 +48,7 @@
 
     .coll-mov {
         position: fixed;
+        wi
     }
 
     .h6 {
@@ -64,7 +65,7 @@
     }
 
     .prof {
-        border-radius: 30px;
+        border-radius: 80px;
         border: 1px solid white;
     }
 }
@@ -102,7 +103,32 @@ body {
     opacity: 0.2;
 }
 
+.dh,
+.dropdown-item {
+    font-family: 'Quicksand', sans-serif;
+    color: white;
+    text-align: center;
+}
 
+.simple-button {
+    background-color: #44296b;
+}
+
+.warn-button {
+    background-color: #a13333;
+}
+
+.simple-button:active {
+    outline: #45296b91;
+}
+
+.menu-notif {
+    min-width: 15rem;
+}
+
+.notif-item {
+    background-color: #44296b;
+}
 /*Footer*/
 
 .footer-color {

@@ -15,9 +15,12 @@ document.addEventListener('DOMContentLoaded', function () {
         )
     }
     load('html/general.html');
+    //botones principales
     let jsBtn = document.getElementsByClassName("js-btn");
     jsBtn[0].addEventListener('click', e => load('html/general.html'));
-    jsBtn[1].addEventListener('click', e => load('html/general.html'));
+    // jsBtn[1].addEventListener('click', e => load('html/general.html'));
+
+
 
     let menuBtn = document.getElementsByClassName("navbar-toggler");
     let icon = document.getElementsByClassName("material-icons");
@@ -25,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (menuBtn[0].classList.contains("burger")) {
             menuBtn[0].classList.remove("burger");
             icon[0].innerHTML = "menu";
-        } else {            
+        } else {
             icon[0].innerHTML = "close";
             menuBtn[0].classList.add("burger");
         }
@@ -43,5 +46,8 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
-
+    let ics = document.getElementsByClassName("ics");
+    for (let i = 0; i < ics.length; i++) {
+        ics[i].addEventListener('click', e => e.preventDefault());
+    }
 })
