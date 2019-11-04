@@ -33,13 +33,11 @@ height: 200px;
         height: 65vh;
        
       }
-      .carousel-caption{
-          font-size: small;
-      }
+     
 }
 @media only screen and (max-width : 575px){
     .carousel-header {
-        height: 40vh;
+        height: 10vh;
        
       }
       .carousel-caption{
@@ -54,6 +52,9 @@ height: 200px;
 .button-header{
     bottom: 0;
     right: 0;
+    
+    height: 100%;
+    width: 100%;
 }
 .btn-suscribirse{
     color: white;
@@ -61,6 +62,7 @@ height: 200px;
     height: 30%;
     width: 45%;
     font-weight: normal;
+    font-size: 80%;
     
 }
 .btn-suscribirse:hover{
@@ -130,12 +132,13 @@ height: 200px;
 }
 .carousel-control-next{
     top: 5%;
-    
+    width: 10%;
     left: 90%;
 }
 
 .carousel-control-prev{
     top: 1%;
+    width: 10%;
     left: -5%;
     margin-right: 100%;
 }
