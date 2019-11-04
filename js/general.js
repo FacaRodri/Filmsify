@@ -1,22 +1,86 @@
 'use strict'
-$(document).ready(function () {
-    $('#carouselExample').on('slide.bs.carousel', function (e) {
 
-        var $e = $(e.relatedTarget);
-        var idx = $e.index();
-        var itemsPerSlide = 6;
-        var totalItems = $('.carousel-item').length;
 
-        if (idx >= totalItems - (itemsPerSlide - 1)) {
-            var it = itemsPerSlide - (totalItems - idx);
-            for (var i = 0; i < it; i++) {
-                // append slides to end
-                if (e.direction == "left") {
-                    $('.carousel-item').eq(i).appendTo('.carousel-inner');
-                } else {
-                    $('.carousel-item').eq(0).appendTo('.carousel-inner');
-                }
-            }
+document.addEventListener('DOMContentLoaded', function () {
+    setInterval(() => {
+        let reproductor = 'html/reproductorPelicula.html';
+        let btnPlay = document.getElementsByClassName('btn-play');
+        for  (let i = 0; i < btnPlay.length; i++) {
+            btnPlay[i].addEventListener('click', e => play());
         }
-    });
+
+
+        function play() {
+            fetch(reproductor).then(
+                    function (r) {
+                        r.text().then(function (r) {
+                            document.querySelector(".cuerpo").innerHTML = r;
+                        })
+                    })
+                .catch(function (response) {
+                    document.querySelector(".cuerpo").innerHTML = "<h1>No es posible acceder en este momento, intente mas tarde,</h1>"
+                });
+        }
+
+
+
+    }, 500);
+    setInterval(() => {
+        let infoPage = 'html/resumen-pelicula.html'
+        let btnInfo = document.getElementsByClassName('btn-info-header');
+        
+        for  (let i = 0; i < btnInfo.length; i++) {
+            btnInfo[i].addEventListener('click', function(e){
+                e.preventDefault();
+                info();
+            }); 
+        }
+
+
+        function info() {
+            fetch(infoPage).then(
+                    function (r) {
+                        r.text().then(function (r) {
+                            document.querySelector(".cuerpo").innerHTML = r;
+                        })
+                    })
+                .catch(function (response) {
+                    document.querySelector(".cuerpo").innerHTML = "<h1>No es posible acceder en este momento, intente mas tarde,</h1>"
+                });
+        }
+    }, 500);
+
+    setInterval(() => {
+        let reproductor = 'html/reproductorPelicula.html';
+        let btnPlayMobile = document.getElementsByClassName('btn-play-mobile');
+        
+        for  (let i = 0; i < btnPlayMobile.length; i++) {
+            btnPlayMobile[i].addEventListener('click', function(e){
+                e.preventDefault();
+                play();
+            }); 
+        }
+
+
+        function play() {
+            fetch(reproductor).then(
+                    function (r) {
+                        r.text().then(function (r) {
+                            document.querySelector(".cuerpo").innerHTML = r;
+                        })
+                    })
+                .catch(function (response) {
+                    document.querySelector(".cuerpo").innerHTML = "<h1>No es posible acceder en este momento, intente mas tarde,</h1>"
+                });
+        }
+    }, 500);
+
+
+
+
+
+
+
+
+
 });

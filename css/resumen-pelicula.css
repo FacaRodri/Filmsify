@@ -1,10 +1,4 @@
-.caption {
-    background: linear-gradient(180deg, rgba(43, 38, 46, 0.85) 5%, rgba(43, 38, 46, 0.75) 30%, rgba(43, 38, 46, 0) 100%);
-    width: 100%;
-    height: 20%;
-    left: 0;
-    bottom: 1rem;
-}
+
 
 /* Container holding the image and the text */
 .principal {
@@ -20,31 +14,32 @@
     left: 16px;
 }
 .desc{
-    background: linear-gradient(180deg, rgba(166, 166, 166, 0.151) 0%, rgba(255, 255, 255, 0) 100%);
-    width: 100%;
+    background: linear-gradient(180deg, rgba(94, 92, 92, 0.425) 0%, rgba(255, 255, 255, 0) 100%);
+    width: 100vw;
     height: 30%;
     left: 0;
     bottom: 2rem;
+    
+}
+.btn-fav-resumen{
+    color: white;
+    background-color: #53347E;
+    height: 30%;
+    width: 20vw;
+    font-weight: normal;
+    font-size: 80%;
+    z-index: 10000;
+}
+.btn-fav-resumen:hover{
+    border: solid 1px white;
+    color: white;
 }
 
-@media only screen and (min-width: 1200px) {
-    .desc {
-        font-size: 1,5vw;
-        top:65%;
-    }
+.play-joker{
+    padding-top: 15%;
+    z-index: 1500;
+    height: 10%;
 }
-@media only screen and (max-width: 991px) {
-    .desc {
-        font-size: 1,6vw;
-    }
-}
-@media only screen and (max-width: 767px) {
-    .desc {
-        font-size: 1,7vw;
-    }
-}
-@media only screen and (max-width: 575px) {
-    .desc {
-        font-size: 1,8vw;
-    }
+.joker{
+    width: 100vw;
 }

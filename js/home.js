@@ -18,7 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
     //botones principales
     let jsBtn = document.getElementsByClassName("js-btn");
     jsBtn[0].addEventListener('click', e => load('html/general.html'));
-    // jsBtn[1].addEventListener('click', e => load('html/general.html'));
+    jsBtn[1].addEventListener('click', e => load('html/general.html'));
+    jsBtn[2].addEventListener('click', e => load('html/peliculas.html'));
+    jsBtn[3].addEventListener('click', e => load('html/series.html'));
+    jsBtn[4].addEventListener('click', e => load('html/favoritos.html'));
+
+
+
+
 
 
 
