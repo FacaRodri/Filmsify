@@ -40,19 +40,14 @@ padding: 0;
 }
 .welcome{
     text-align: center;
-    margin-top: 100px;
+    margin-top: 20%;
 }
 .welcome-text{
     text-align: left;
-    margin-left: 160px;
-    margin-top: 150px;
+    margin-left:20% ;
+    margin-top:30% ;
 }
 
-/* .container{ Checar despues
-    margin-right: 0;
-    margin-left: 0;
-    width: 100%;
-} */
 
 .btn-sesion{
     color: white;
@@ -91,7 +86,7 @@ padding: 0;
     padding: 0 0 0 0;
 }
 input.creditCard{
-    background: url('images/mastercard.png') 0 0 no-repeat;
+    background: url('/images/mastercard.png') 0 0 no-repeat;
     background-size: 50px 30px;
     background-position: right;
 

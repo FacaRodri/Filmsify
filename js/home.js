@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         )
     }
-    load('html/general.html');
+    load('html/resumen-pelicula.html');
     //botones principales
     let jsBtn = document.getElementsByClassName("js-btn");
     jsBtn[0].addEventListener('click', e => load('html/general.html'));
