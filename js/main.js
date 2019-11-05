@@ -93,3 +93,23 @@ function ayuda() {
     });
 }
 
+
+////// ANIMATION LOGIN /////
+
+let anamationContainer = document.getElementsByClassName('animation-container');
+let divHidden = document.getElementsByClassName('partial');
+let animation = document.getElementsByClassName('circle');
+
+
+function animationLogin(){
+  divHidden[0].style.display = "none";
+  animation[0].style.display = "block";
+  anamationContainer[0].style.display = "block"
+  setTimeout(() => {
+    home();
+  }, 2000);
+}
+
+
+
+
