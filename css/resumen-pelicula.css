@@ -59,7 +59,7 @@
 .form-group{
     color: white !important;
 }
-::placeholder{
+input::placeholder{
     color: white;
 }
 
@@ -74,6 +74,40 @@
     background: rgb(73, 80, 87);
     
 }
-.card:hover{
-    
+
+.card-body:hover .material-icons{
+    transform: scale(1.5);
+
 }
+.button, .tick {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  .button {
+    width: 100px;
+    height: 40px;
+    background:  #53347E;
+    border-radius: 6px;
+    transition: all .3s cubic-bezier(0.67, 0.17, 0.40, 0.83);
+  }  
+  .button svg {
+    transform: rotate(360deg);
+    transition: all .5s;
+  }
+  .button__circle {
+    width: 80px;
+    height: 80px;
+    background: mediumseagreen;
+    border-radius: 50%;
+    transform: rotate(-360deg);
+  }
+  .button:hover {
+    cursor: pointer;
+  }
+  .tick {
+    color: white;
+    font-size: 1em;
+    transition: all .9s;
+  }

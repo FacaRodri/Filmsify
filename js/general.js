@@ -51,31 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }, 500);
 
-    setInterval(() => {
-        let reproductor = 'html/reproductorPelicula.html';
-        let btnPlayMobile = document.getElementsByClassName('btn-play-mobile');
-        
-        for  (let i = 0; i < btnPlayMobile.length; i++) {
-            btnPlayMobile[i].addEventListener('click', function(e){
-                e.preventDefault();
-                play();
-            }); 
-        }
-
-
-        function play() {
-            fetch(reproductor).then(
-                    function (r) {
-                        r.text().then(function (r) {
-                            document.querySelector(".cuerpo").innerHTML = r;
-                        })
-                    })
-                .catch(function (response) {
-                    document.querySelector(".cuerpo").innerHTML = "<h1>No es posible acceder en este momento, intente mas tarde,</h1>"
-                });
-        }
-    }, 500);
-
+    
     
 
 
