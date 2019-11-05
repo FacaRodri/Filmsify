@@ -38,6 +38,20 @@
 .like{
     color: blueviolet;
 }
+.like-button{
+    color: blueviolet;
+
+}
+.dislike-button{
+    color: darkred;
+
+}
+.like-button:hover{
+    transform: scale(1.5);
+}
+.dislike-button:hover{
+    transform: scale(1.5);
+}
 .dislike{
     color: darkred;
 }
@@ -58,5 +72,8 @@
 }
 .card{
     background: rgb(73, 80, 87);
+    
+}
+.card:hover{
     
 }
