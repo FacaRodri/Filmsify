@@ -1,10 +1,11 @@
 "use strict"
-let suscription1 = 'html/suscription1.html'
-let suscription2 = 'html/suscription2.html'
-let suscription3 = 'html/suscription3.html'
-let suscription4 = 'html/suscription4.html'
-let inicio = 'html/inicio.html'
-let start_sesion = 'html/logging.html'
+let suscription1 = 'html/suscription1.html';
+let suscription2 = 'html/suscription2.html';
+let suscription3 = 'html/suscription3.html';
+let suscription4 = 'html/suscription4.html';
+let faq = 'html/ayuda.html';
+let inicio = 'html/inicio.html';
+let start_sesion = 'html/logging.html';
 
 firstLoad();
 
@@ -80,5 +81,15 @@ function logging() {
 function home(){
   window.location.href = 'home.html';
 }
-
+function ayuda() {
+  fetch(faq).then(
+      function (r) {
+        r.text().then(function (r) {
+          document.querySelector(".partial").innerHTML = r;
+        })
+      })
+    .catch(function (response) {
+      document.querySelector(".partial").innerHTML = "<h1>No es posible acceder en este momento, intente mas tarde,</h1>"
+    });
+}
 
