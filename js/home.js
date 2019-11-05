@@ -1,5 +1,9 @@
 'use strict'
+function game404(){
+    window.location.href = 'game404.html';
+  }
 document.addEventListener('DOMContentLoaded', function () {
+    
     let btns = document.getElementsByClassName("nav-item");
     let nav = document.getElementsByClassName("navbar-collapse");
 
@@ -58,3 +62,4 @@ document.addEventListener('DOMContentLoaded', function () {
         ics[i].addEventListener('click', e => e.preventDefault());
     }
 })
+

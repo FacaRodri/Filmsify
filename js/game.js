@@ -1,6 +1,5 @@
 "use strict";
 
-export function iniciarJuego(){
   window.onload = move;
 
   //Player
@@ -146,4 +145,4 @@ export function iniciarJuego(){
     }
   }
   
-}
+

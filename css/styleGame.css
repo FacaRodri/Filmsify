@@ -3,9 +3,7 @@
   font-weight: bold;
 }
 
-body {
-  background-image: url("../images/practico/wallpaper3.jpg");
-}
+
 #game {
   position: absolute;
   margin-left: -15px;
@@ -261,7 +259,7 @@ body {
   height: 100px;
   width: 200px;
   margin-top: 150px;
-  margin-left: 930px;
+  margin-left: 947px;
   position: absolute;
   z-index: 80;
   visibility: visible;
