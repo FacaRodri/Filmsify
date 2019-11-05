@@ -99,6 +99,7 @@ button.suscribite{
 .suscribite:hover{
     color:lightgrey;
 }
-
-
+.confirm-section {
+    border-top: 1px solid #53347E;
+}
 
