@@ -21,6 +21,17 @@
 width:10%;
 height: 200px;
 
+
+}
+.btn-fav-friday{
+    color: white;
+    background-color: #53347E;
+  
+}
+.btn-play-friday{
+    color: white;
+    background-color: #53347E;
+   
 }
 
 @media only screen and (min-width : 1200px){
@@ -29,30 +40,76 @@ height: 200px;
        
       }
 }
-@media only screen and (max-width : 767px){
+@media only screen and (max-width : 600px){
     .carousel-header {
-        height: 65vh;
+        height: 25vh !important;
        
       }
      
 }
-@media only screen and (max-width : 575px){
+@media only screen and (max-width : 600px){
+    .btn{
+        background-color: transparent !important;
+        background-repeat:no-repeat !important;
+        border: none !important;
+        cursor:pointer !important;
+        overflow: hidden !important;
+        outline:none !important; 
+        box-shadow: none;
+        font-size: 40% !important;
+    }
+    .btn-fav{
+        padding: 10px;
+        float: left !important;
+    }
+    .btn-play{
+        padding: 10px;
+        float: left !important;
+    }
+    #btn-play{
+        padding: 10px;
+        float: left !important;
+    }
+    .button-header{
+        position: relative;
+    }
     .carousel-header {
         height: 5vh;
        
       }
-      .carousel-caption{
-          margin-bottom: 25%;
-        font-size: small;
+      .info-header{
+          position: absolute !important;
+          font-size: 20px !important;
+          padding-right:5000px !important ;
+      }
+     .btn-play-friday{
+        padding: 0;
+        margin-bottom: 100%;    
+    
     }
+    .bg-friday{
+        height: 200px;
+    }
+    .btn-fav-friday {
+        position: relative;
+        right: 110% !important;
+        padding: 0;
+        margin-bottom: 100%;    
+
+    }
+      .carousel-caption{
+        margin-bottom: 25%;
+        font-size: small;
+        width: 110vw;
+    }
+   
     .carousel-caption.h1{
         font-size: 10%;
     }
-    .btn-suscribirse{
-     
-        
-        
+    .carousel-item{
+        height: 20%;
     }
+  
 }
 
 .button-header{
